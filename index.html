@@ -1,0 +1,129 @@
+<!--Code by Mr. Web Designer-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool List</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- noti -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<div class="container">
+<!-- nav -->
+<a href="https://nhan2k5.github.io/" class="exit-button"><i class="fa-solid fa-arrow-left"></i> Back</a>
+<!-- contact slide by codingnepal -->
+    <div class="container2">
+      <span class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/UserDinhNhan?mibextid=ZbWKwL" style="background: #4267b2">
+<i class="fa-brands fa-facebook"></i>
+          <span class="tooltip" style="color: #4267b2">Facebook</span>
+        </a>
+        <a href="https://github.com/nhan2k5" style="background: #000">
+          <i class="fa-brands fa-github"></i>
+          <span class="tooltip" style="color: #000">Github</span>
+        </a>
+        <a href="https://t.me/nhannhanzz" style="background: #11c9f2">
+          <i class="fa-brands fa-telegram"></i>
+          <span class="tooltip" style="color: #11c9f2">Telegram</span>
+        </a>
+
+      </div>
+    </div>
+<!---->
+    <h1 class="heading">list tools <i class="fa-solid fa-toolbox"></i></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Weather_Icons_-_bkn.svg/1200px-Weather_Icons_-_bkn.svg.png" alt="">
+            <h3>weather forecast</h3>
+            <p>Weather forecast: Predicting future weather conditions</p><br>
+            <a href="#" class="btn"> Use <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.svgrepo.com/show/339963/chat-bot.svg" alt="">
+            <h3>ChatBot</h3>
+            <p>A chatbot is a computer program that talks and interacts with people like a human</p><br>
+            <a href="#" class="btn">Use <i class="fa-sharp fa-solid fa-arrow-right"></i></a><br>
+        </div>
+
+        <div class="box">
+            <img src="https://www.svgrepo.com/show/87277/calculator.svg" alt="">
+            <h3>basic Caculator</h3>
+            <p>A basic calculator is a handy tool for quick math</p><br>
+            <a href="#" class="btn">Use <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpjcEE0M30QhNUrssRTQ2fZiOQrwhMD_JJHg&usqp=CAU" alt="">
+            <h3>To Do list</h3>
+            <p>A to-do list is a simple list of tasks to be done</p><br>
+            <a href="#" class="btn">Use <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.shareicon.net/data/2015/12/27/693762_drawing_512x512.png" alt="">
+            <h3>Drawing app</h3>
+            <p>A drawing app is a digital tool for creating art and illustrations</p>
+            <a href="#" class="btn">Use <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+        </div>
+<!-- box not found -->
+        <div class="box">
+            <img src="https://i.gifer.com/ZKZg.gif" alt="">
+            <h3>Loading...</h3>
+            <p>Loading...</p><br>
+            <a class="btn" onclick="showToast()">Use <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+<hr>
+<!-- footer -->
+<a class="footertext">All right reverse @2023 <i class='bx bx-cross bx-spin'></i>
+</a>
+  
+</div>
+<!--noti toast-->
+<script>
+     function showToast() {
+       const Toast = Swal.mixin({
+         toast: true,
+         position: 'top-end',
+         showConfirmButton: false,
+         timer: 3500,
+         timerProgressBar: true,
+         didOpen: (toast) => {
+           toast.addEventListener('mouseenter', Swal.stopTimer)
+           toast.addEventListener('mouseleave', Swal.resumeTimer)
+         }
+       })
+   
+       Toast.fire({
+         icon: 'error',
+         title: 'Looks like this page does not exist😓'
+       })
+     }
+</script>
+<!-- Contact slide by codingnepal -->
+    <script>
+      const closeBtn = document.querySelector(".close-btn");
+
+      closeBtn.addEventListener("click", () => {
+        closeBtn.classList.toggle("open");
+      });
+    </script>
+<script src="#"></script>
+</body>
+</html>
